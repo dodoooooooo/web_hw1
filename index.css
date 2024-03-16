@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #fffaf0; /* 淡米色的十六进制颜色代码 */
+}
+
+.box {
+    text-align: center;
+    padding-top: 60px; /* 添加一些顶部内边距 */
+}
+
+.theme {
+    font-size: 4.2vw; /* 调整字体大小以适应视口宽度 */
+    font-weight: bold;
+    color: #1685a9;
+}
+
+.sub {
+    font-size: 1.8vw; /* 调整字体大小以适应视口宽度 */
+    color: #4c8dae;
+}
+
+
+.link {
+    cursor: pointer; /* 确保链接显示为手型指针 */
+}
+
+.link a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.box img {
+    position: absolute; /* 将图片设置为绝对定位，使其脱离文档流 */
+    bottom: -5px; /* 调整图片距离容器底部的距离 */
+    left: 50%; /* 将图片水平居中 */
+    transform: translateX(-50%); /* 使用transform属性使图片水平居中 */
+    width: 730px; /* 设置图像宽度为200像素 */
+    height: auto; /* 高度自适应，保持宽高比 */
+    z-index: -1; /* 将图片的层叠顺序设置为负值，使其位于文字下方 */
+    margin-bottom: 20px; /* 在图片底部留出 20px 的空白 */
+}
